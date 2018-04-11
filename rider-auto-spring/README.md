@@ -1,3 +1,7 @@
+# Camel
+
+Camel metrics - data stream procesing toolkit
+
 Example from "Open Source Integration with Apache Camel" Article
 ========================================================
 
@@ -7,21 +11,23 @@ according to the steps below.
 Setup
 ==============================
 
-- Install Eclipse 3.6.2
-    - Download distribution from http://www.eclipse.org. 
-    - Unzip the downloaded Eclipse distribution to a location on your hard disk 
-    that you find suitable.
+Install dependencies:
 
-- Install Apache Maven 3+
-    - Download distribution from http://maven.apache.org. 
-    - Unzip the downloaded Maven distribution to a location on your hard disk
-    that you find suitable.
-    - configure this location as the environment variable MAVEN_HOME
-    - add MAVEN_HOME/bin to your PATH environment variable
+```sh
+mvn install
+```
 
-- Install Fuse IDE for Camel
-    - Follow the instructions at: 
-      http://fusesource.com/docs/ide/camel/1.0/install_guide/index.html
+Build package with dependencies:
+
+```sh
+mvn clean compile assembly:single
+```
+
+Run program cycle:
+
+```sh
+mvn package
+```
 
 Running the Camel application
 ============================

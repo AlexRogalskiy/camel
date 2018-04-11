@@ -1,4 +1,4 @@
-package org.fusesource.camel;
+package com.wildbeeslabs.sensiblemetrics.riderguide;
 
 import org.apache.camel.builder.RouteBuilder;
 
