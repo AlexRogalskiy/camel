@@ -16,8 +16,8 @@ import org.apache.camel.dataformat.bindy.annotation.DataField;
 import org.apache.commons.lang.StringUtils;
 
 @Data
-@EqualsAndHashCode(callSuper = false)
-@ToString(callSuper = false)
+@EqualsAndHashCode
+@ToString
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @CsvRecord(separator = ",", skipFirstLine = true)
